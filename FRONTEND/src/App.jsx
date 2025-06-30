@@ -1,15 +1,19 @@
-import React from 'react';
-import './index.css';
+import React from 'react'
+import HomePage from './pages/HomePage'
+import LoginForm from './components/LoginForm'
+import AuthPage from './pages/AuthPage'
+import { Outlet } from '@tanstack/react-router'
+import Navbar from './components/NavBar'
 
-function App() {
-  
-
+const RootLayout = () => {
   return (
     <>
-     <div className="bg-amber-950"><Bruh></Bruh></div>
- 
+      <Navbar/>
+      <Outlet/>
     </>
   )
 }
+
+
 
 export default App
